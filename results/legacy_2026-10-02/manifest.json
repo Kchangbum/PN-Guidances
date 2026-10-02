@@ -1,0 +1,71 @@
+{
+  "record_type": "existing_artifact_inventory",
+  "recorded_at": "2026-10-02T19:00:18.619358+09:00",
+  "project_version": null,
+  "git_commit": null,
+  "version_note": "Project root is not a Git repository; github_upload is a separate copy.",
+  "source_ppt": "docs/Guidance_Software_Framework.pptx",
+  "slide_count": 18,
+  "matlab_run": "not_executed",
+  "historical_test_summary": {
+    "source": "docs/Software_Lifecycle.md section 11",
+    "total": 24,
+    "pass": 21,
+    "fail": 3,
+    "raw_evidence_available": false,
+    "not_revalidated": true
+  },
+  "protected_files": {
+    "main.m": "6b2d8a4ef7408550a7dafb28768f73857e761a0b2b0fae6bbf1196b83dbeaada",
+    "configuration.m": "06d95963c1199466b589c283a39870f922100e7788295902e019a0a96a8afbcd",
+    "computeRelativeGeometry.m": "7fe061b33391e3087ffaae6ee5170e6aa25139fa903e4b59682a6eb9c32c8996",
+    "computePNGuidance.m": "d014e5c102dc2d75438d21658f90b1f8385936d2effa0ab1356e3e198e8f5132",
+    "computeBankCommand.m": "a768282a833dc7b53e0df58446c8cfacb72ba4fdd925e1a86ad93f11c9ba22bd",
+    "computeKinematics.m": "674e0c8e98584d54b7996b71015cab0f83338eae5a5ee5f4231b4d5976ee4d01",
+    "visualizeSimulation.m": "3799b37214571599d4de924228f26de70c8f7fcd36d534d1ae1e320174b5acb0",
+    "examples/guidance.m": "ea0fc037563bded6f473d7a4a2c24870d9139eafedf8284e90f73fc72abd2779",
+    "docs/Classical_PN_Guidance_2D_Derivation_final.pptx": "b47971b69ee35cff37062a83d83120afc4a16bf0c85412168b3138a6e7ad79c3",
+    "docs/Guidance_Software_Framework.pptx": "d1d6c80fcadd95959345ef32ad6250bf3149b51c6814852c62a7ba2eccd7e67c",
+    "docs/Classical_PN_Guidance_2D_Derivation_final.pdf": "779213b4ef018f04a7ddcf3f881d86c6adb0db0173ed723d99fe32bce038cbf6",
+    "docs/Guidance_Software_Framework.pdf": "82ee62c2da08c52848979809370e988b819988f8057d635fb11c835de101d892"
+  },
+  "pngs": [
+    {
+      "file": "png/05_guidance_example.png",
+      "sha256": "7cdae9d908934d45f2b90b9b650b8dd016da8882d3dee82c43d406996646d10a",
+      "previous_path": "output/05_guidance_example.png"
+    },
+    {
+      "file": "png/baseline_original_01.png",
+      "sha256": "99c6e71a274de7c61538c3143631f1fe283b419b96fc3429004866ea8e511a21",
+      "previous_path": "output/baseline_original_01.png"
+    },
+    {
+      "file": "png/baseline_original_02.png",
+      "sha256": "7c7b0f28b62cde13a0b04b44c9efae357485587fe0893c8396336b0ccbb7fd29",
+      "previous_path": "output/baseline_original_02.png"
+    },
+    {
+      "file": "png/baseline_original_03.png",
+      "sha256": "5b3e7f3b83abd3b295aa5e78d17fcaa66ef0be081056da0b6e71157ff93b7ebc",
+      "previous_path": "output/baseline_original_03.png"
+    },
+    {
+      "file": "png/baseline_original_04.png",
+      "sha256": "fbc89886fb5dd1eb5b746535e54d9ec12f47e59ff932f5f705a8c0d3cdb84e3d",
+      "previous_path": "output/baseline_original_04.png"
+    },
+    {
+      "file": "png/baseline_original_05.png",
+      "sha256": "69da11dfd2ac213f53ec94fbff70e3484593b2c3f843baf8b35877b26160b930",
+      "previous_path": "output/baseline_original_05.png"
+    },
+    {
+      "file": "png/baseline_original_06.png",
+      "sha256": "9b58fe0619821defd90c0ee01cf8f49cbf5eece8344228aa61286d9f4cddeca3",
+      "previous_path": "output/baseline_original_06.png"
+    }
+  ],
+  "original_run_config": null,
+  "png_to_current_source_version": "not_confirmed"
+}
