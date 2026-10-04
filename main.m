@@ -1,5 +1,8 @@
 close all; clc; clear;
 
+projectDirectory = fileparts(mfilename('fullpath'));
+addpath(fullfile(projectDirectory, 'src'));
+
 %% Initialization
 configuration;
 

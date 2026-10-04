@@ -4,7 +4,7 @@
 
 상태: **결과 표시 부분의 시스템 설계 초안 작성, 사용자 검토 전**.
 
-기준: [1단계 변경 요구사항](01_requirements.md), [기존 시각화 파일](../../visualizeSimulation.m), [원본 PPT](../Guidance_Software_Framework.pptx)의 Step 2 시스템 기능 구성 방식.
+기준: [1단계 변경 요구사항](01_requirements.md), [기존 시각화 파일](../../src/visualizeSimulation.m), [원본 PPT](../Guidance_Software_Framework.pptx)의 Step 2 시스템 기능 구성 방식.
 
 ## 1. 범위
 
@@ -78,3 +78,4 @@
 ## 7. 단계 결과와 남은 범위
 
 기존 결과의 입력·출력, 화면 구성, 표시 기능과 흐름을 문서화했다. 이는 결과 표시 부분의 초안이며 전체 실행 환경의 시스템 설계 완료를 의미하지 않는다. 코드 구현·실행·시험·GitHub 업로드는 수행하지 않았다.
+

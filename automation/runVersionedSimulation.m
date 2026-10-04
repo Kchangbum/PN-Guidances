@@ -17,9 +17,12 @@ diary(fullfile(outputDirectory,'logs','simulation.log'));
 diaryCleanup = onCleanup(@() diary('off'));
 sourceDirectory = fullfile(outputDirectory,'data','source');
 mkdir(sourceDirectory);
-sourceFiles = dir(fullfile(projectDirectory,'*.m'));
+copyfile(fullfile(projectDirectory,'main.m'),sourceDirectory);
+mkdir(fullfile(sourceDirectory,'src'));
+sourceFiles = dir(fullfile(projectDirectory,'src','*.m'));
 for iSource = 1:numel(sourceFiles)
-    copyfile(fullfile(projectDirectory,sourceFiles(iSource).name),sourceDirectory);
+    copyfile(fullfile(projectDirectory,'src',sourceFiles(iSource).name), ...
+        fullfile(sourceDirectory,'src'));
 end
 % main clears its workspace; use the base workspace to protect export state.
 evalin('base','main');
@@ -59,6 +62,6 @@ for iResult = 1:numel(SimulationResults)
     fprintf(reportFile,'| %s | %.6f | %.9f |\n',result.name,result.time(iClosest),minRange);
 end
 fprintf(reportFile,'\nThese are sampled distances, not continuous closest-approach or hit verdicts.\n');
-fprintf(reportFile,'\nHistorical figures: [legacy report](../../legacy_2026-10-02/report.md).\n');
+fprintf(reportFile,'\nHistorical records: [legacy report](../../legacy_2026-10-02/report.md).\n');
 fprintf('Simulation results: %s\n',outputDirectory);
 end

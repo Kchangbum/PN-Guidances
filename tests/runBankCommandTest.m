@@ -3,7 +3,7 @@ function outputDirectory = runBankCommandTest()
 projectDirectory = fileparts(fileparts(mfilename('fullpath')));
 originalPath = path;
 pathCleanup = onCleanup(@() path(originalPath));
-addpath(projectDirectory, fullfile(projectDirectory,'tests','unit'));
+addpath(fullfile(projectDirectory,'src'), fullfile(projectDirectory,'tests','unit'));
 runId = char(datetime('now','TimeZone','Asia/Seoul', ...
     'Format','yyyy-MM-dd_HHmmss_SSS'));
 outputDirectory = fullfile(projectDirectory,'results','v0.2.0',runId);
@@ -25,7 +25,7 @@ fprintf(reportFile,'Version: v0.2.0 development\n\nRun ID (Asia/Seoul): %s\n\n',
 fprintf(reportFile,'MATLAB: %s\n\nScope: zero command and +/-45 degree limits only.\n\n',version);
 fprintf(reportFile,'Tolerance: 1e-10 rad. No guidance performance verdict or simulation figures.\n\n');
 % Preserve the exact tested function and test source alongside the data.
-copyfile(fullfile(projectDirectory,'computeBankCommand.m'), ...
+copyfile(fullfile(projectDirectory,'src','computeBankCommand.m'), ...
     fullfile(outputDirectory,'data','computeBankCommand.m'));
 copyfile(fullfile(projectDirectory,'tests','unit','testBankCommand.m'), ...
     fullfile(outputDirectory,'data','testBankCommand.m'));
