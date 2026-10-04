@@ -1,3 +1,5 @@
 # 결과 관리
 
-[기존 PNG 정리 기록](legacy_2026-10-02/report.md)은 신규 시험 결과가 아니다. 새 실행은 별도 실행 ID 폴더에 manifest.json, report.md, logs/, data/, png/를 묶어 보관한다.
+[기존 PNG 정리 기록](legacy_2026-10-02/report.md)은 신규 시험 결과가 아니다. 기존 파일과 버전 미확인 상태를 유지한다.
+
+새 결과는 버전과 실행 ID로 구분한다. [v0.2.0 운영 안내](v0.2.0/README.md)를 따른다. 과거 안내의 png/ 대신 새 실행에서는 figures/를 사용한다.
